@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Typecheck & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: pnpm
+
+      - name: Asenna riippuvuudet
+        run: pnpm install --frozen-lockfile
+
+      - name: Tyyppitarkistus
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+
+      - name: Nayta buildin koko
+        run: du -sh dist && find dist -type f | head -20

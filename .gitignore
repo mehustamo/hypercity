@@ -1,0 +1,6 @@
+node_modules
+dist
+docs/*.png
+!docs/preview-*.png
+*.log
+.DS_Store

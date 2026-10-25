@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#04070e" />
+    <meta name="description" content="DEEPSEEK // HYPERCITY — a living procedural 3D city, rendered in real time." />
+    <title>DEEPSEEK // HYPERCITY</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050a14'/%3E%3Cpath d='M14 18h18c12 0 20 5 20 14s-8 14-20 14H14V18zm12 9v10h6c5 0 8-2 8-5s-3-5-8-5h-6z' fill='%2363e6ff'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="world" aria-label="Animated 3D city simulation"></canvas>
+      <div id="ui"></div>
+      <div id="loading" class="loading-screen">
+        <div class="loader-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="loader-copy">
+          <div class="eyebrow">DEEPSEEK // REAL-TIME SYSTEMS</div>
+          <h1>HYPERCITY</h1>
+          <div class="loader-bar"><i id="loader-progress"></i></div>
+          <div class="loader-row">
+            <span id="loader-stage">INITIALIZING RENDER CORE</span>
+            <span id="loader-percent">00%</span>
+          </div>
+        </div>
+        <div id="fatal-error" class="fatal-error" hidden></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

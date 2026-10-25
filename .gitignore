@@ -1,6 +1,29 @@
+# Riippuvuudet
 node_modules
+
+# Buildit
 dist
+dist-ssr
+.vite
+
+# Wrangler (paikallinen deploy-valimuisti)
+.wrangler
+
+# Kuvakaappaukset: vain README:n preview-kuvat versionhallintaan
 docs/*.png
 !docs/preview-*.png
+
+# Ympäristömuuttujat ja salaisuudet — ei koskaan repoon (repo on julkinen)
+.env
+.env.*
+!.env.example
+
+# Lokit ja paikalliset tiedostot
 *.log
+*.local
 .DS_Store
+
+# Editorit
+.vscode/*
+!.vscode/extensions.json
+.idea

@@ -4,6 +4,8 @@ A real-time, procedural 3D city built for the browser. Fly above the skyline, wa
 
 Everything is generated and rendered at runtime with Three.js and WebGL2. No external models, textures, image assets, map data, API keys, or network requests are required after the app loads.
 
+**Live:** <https://hypercity.pages.dev> — `main` deploys to production via GitHub Actions → Cloudflare Pages; pull requests get their own preview URL.
+
 ![Hypercity at night](docs/preview-city.png)
 
 ## Run it

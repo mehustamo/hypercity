@@ -1,8 +1,9 @@
 {
-  "name": "deepseek-hypercity",
+  "name": "hypercity",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "packageManager": "pnpm@10.34.8",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
